@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Operation NCLC 7 — French Learning Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1B4F72; --blue: #2E86C1; --light-blue: #EBF5FB; --accent: #E74C3C;
+  --green: #27AE60; --orange: #F39C12; --gray: #5D6D7E; --light-gray: #F8F9FA;
+  --white: #FFFFFF; --dark: #2C3E50; --border: #DEE2E6;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter',system-ui,-apple-system,sans-serif; background:var(--light-gray); color:var(--dark); }
+a { color:var(--blue); text-decoration:none; }
+a:hover { text-decoration:underline; }
+.container { max-width:1100px; margin:0 auto; padding:0 16px; }
+
+/* Header */
+.header { background:linear-gradient(135deg,var(--navy),var(--blue)); color:white; padding:20px 0; position:sticky; top:0; z-index:100; box-shadow:0 2px 12px rgba(0,0,0,.15); }
+.header h1 { font-size:1.4rem; font-weight:800; letter-spacing:-0.5px; }
+.header p { font-size:.85rem; opacity:.85; margin-top:2px; }
+.header-row { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+.week-nav { display:flex; align-items:center; gap:8px; }
+.week-nav button { background:rgba(255,255,255,.2); border:none; color:white; width:32px; height:32px; border-radius:8px; cursor:pointer; font-size:1.1rem; display:flex; align-items:center; justify-content:center; transition:background .15s; }
+.week-nav button:hover { background:rgba(255,255,255,.35); }
+.week-nav button:disabled { opacity:.3; cursor:default; }
+.week-label { font-weight:700; font-size:1rem; min-width:90px; text-align:center; }
+
+/* Tabs */
+.tabs { display:flex; gap:4px; background:var(--white); padding:6px; border-radius:12px; margin:16px 0; box-shadow:0 1px 3px rgba(0,0,0,.06); overflow-x:auto; }
+.tab { padding:8px 16px; border-radius:8px; border:none; background:transparent; cursor:pointer; font-size:.85rem; font-weight:500; color:var(--gray); white-space:nowrap; transition:all .15s; }
+.tab.active { background:var(--navy); color:white; }
+.tab:hover:not(.active) { background:var(--light-blue); color:var(--navy); }
+
+/* Cards */
+.card { background:white; border-radius:12px; padding:20px; margin-bottom:12px; box-shadow:0 1px 3px rgba(0,0,0,.06); border:1px solid var(--border); }
+.card h3 { font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:10px; display:flex; align-items:center; gap:8px; }
+.card h3 .icon { font-size:1.2rem; }
+
+/* Schedule */
+.schedule-slot { padding:12px 0; border-bottom:1px solid #f0f0f0; display:flex; gap:12px; align-items:flex-start; }
+.schedule-slot:last-child { border-bottom:none; }
+.slot-time { min-width:110px; font-weight:600; font-size:.85rem; color:var(--navy); padding-top:2px; }
+.slot-body { flex:1; }
+.slot-title { font-weight:600; font-size:.9rem; margin-bottom:4px; }
+.slot-detail { font-size:.85rem; color:var(--gray); line-height:1.5; }
+.slot-link { display:inline-flex; align-items:center; gap:4px; font-size:.8rem; margin-top:4px; padding:3px 8px; background:var(--light-blue); border-radius:6px; color:var(--blue); font-weight:500; }
+.slot-link:hover { background:#d4ecfa; text-decoration:none; }
+.skill-tag { display:inline-block; padding:2px 8px; border-radius:10px; font-size:.7rem; font-weight:600; text-transform:uppercase; margin-left:6px; }
+.skill-listening { background:#E8F8F5; color:#1ABC9C; }
+.skill-grammar { background:#F5EEF8; color:#8E44AD; }
+.skill-vocab { background:#FEF9E7; color:#F39C12; }
+.skill-writing { background:#FDEDEC; color:#E74C3C; }
+.skill-speaking { background:#EBF5FB; color:#2E86C1; }
+.skill-reading { background:#E8F6F3; color:#16A085; }
+.skill-review { background:#F2F3F4; color:#5D6D7E; }
+.skill-mindset { background:#FDEBD0; color:#E67E22; }
+
+/* Grammar Table */
+.grammar-table { width:100%; border-collapse:collapse; font-size:.85rem; }
+.grammar-table th { background:var(--navy); color:white; padding:10px 12px; text-align:left; font-weight:600; }
+.grammar-table td { padding:10px 12px; border-bottom:1px solid #f0f0f0; }
+.grammar-table tr:nth-child(even) { background:var(--light-blue); }
+.grammar-table .topic-name { font-weight:600; }
+.grammar-table .topic-french { font-size:.8rem; color:var(--gray); font-style:italic; }
+
+/* Progress */
+.progress-bar { height:8px; background:#e9ecef; border-radius:4px; overflow:hidden; margin:8px 0; }
+.progress-fill { height:100%; background:linear-gradient(90deg,var(--blue),var(--green)); border-radius:4px; transition:width .3s; }
+.stats-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; margin:12px 0; }
+.stat { text-align:center; padding:12px; background:var(--light-blue); border-radius:10px; }
+.stat-value { font-size:1.5rem; font-weight:800; color:var(--navy); }
+.stat-label { font-size:.75rem; color:var(--gray); margin-top:2px; }
+
+/* Checklist */
+.check-item { display:flex; align-items:center; gap:10px; padding:8px 0; border-bottom:1px solid #f5f5f5; cursor:pointer; }
+.check-item:last-child { border-bottom:none; }
+.checkbox { width:22px; height:22px; border-radius:6px; border:2px solid var(--border); display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:all .15s; }
+.checkbox.checked { background:var(--green); border-color:var(--green); color:white; }
+.check-label { font-size:.85rem; flex:1; }
+.check-label.done { text-decoration:line-through; color:#aaa; }
+
+/* Day selector */
+.day-pills { display:flex; gap:4px; margin-bottom:12px; flex-wrap:wrap; }
+.day-pill { padding:6px 14px; border-radius:20px; border:2px solid var(--border); background:white; cursor:pointer; font-size:.8rem; font-weight:600; color:var(--gray); transition:all .15s; }
+.day-pill.active { border-color:var(--navy); background:var(--navy); color:white; }
+.day-pill:hover:not(.active) { border-color:var(--blue); color:var(--blue); }
+
+/* Identity */
+.identity-banner { background:linear-gradient(135deg,var(--navy),#2874A6); color:white; border-radius:12px; padding:24px; text-align:center; margin-bottom:12px; }
+.identity-banner .quote { font-size:1.3rem; font-weight:700; font-style:italic; margin-bottom:8px; }
+.identity-banner .sub { font-size:.9rem; opacity:.85; }
+
+/* Responsive */
+@media(max-width:640px) {
+  .header h1 { font-size:1.1rem; }
+  .slot-time { min-width:80px; font-size:.8rem; }
+  .stats-row { grid-template-columns:repeat(2,1fr); }
+  .tabs { gap:2px; padding:4px; }
+  .tab { padding:6px 10px; font-size:.8rem; }
+}
+
+/* Habit tracker */
+.tracker-grid { display:grid; grid-template-columns:auto repeat(7,1fr); gap:2px; font-size:.8rem; }
+.tracker-header { font-weight:600; text-align:center; padding:6px 4px; color:var(--navy); }
+.tracker-habit { padding:6px 8px; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.tracker-cell { text-align:center; padding:6px; border-radius:6px; cursor:pointer; border:1px solid #eee; transition:all .15s; min-height:32px; display:flex; align-items:center; justify-content:center; }
+.tracker-cell:hover { border-color:var(--blue); }
+.tracker-cell.done { background:var(--green); color:white; border-color:var(--green); }
+
+/* Resource link list */
+.resource-list { list-style:none; }
+.resource-list li { padding:8px 0; border-bottom:1px solid #f5f5f5; }
+.resource-list li:last-child { border-bottom:none; }
+.resource-name { font-weight:600; font-size:.9rem; }
+.resource-desc { font-size:.8rem; color:var(--gray); }
+</style>
+</head>
+<body>
+<script src="data.js"></script>
+<script type="text/babel">
+const { useState, useEffect, useMemo, useCallback } = React;
+
+const SKILLS = {
+  listening: { label:'Listening', color:'skill-listening', icon:'🎧' },
+  grammar: { label:'Grammar', color:'skill-grammar', icon:'📐' },
+  vocab: { label:'Vocab', color:'skill-vocab', icon:'📚' },
+  writing: { label:'Writing', color:'skill-writing', icon:'✍️' },
+  speaking: { label:'Speaking', color:'skill-speaking', icon:'🗣️' },
+  reading: { label:'Reading', color:'skill-reading', icon:'📖' },
+  review: { label:'Review', color:'skill-review', icon:'🔄' },
+  mindset: { label:'Mindset', color:'skill-mindset', icon:'💡' },
+};
+
+const DAYS = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday'];
+const DAY_LABELS = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+
+function getStorageKey(week) { return `nclc7_w${week}`; }
+
+function loadChecks(week) {
+  try { return JSON.parse(localStorage.getItem(getStorageKey(week))) || {}; }
+  catch { return {}; }
+}
+function saveChecks(week, checks) {
+  localStorage.setItem(getStorageKey(week), JSON.stringify(checks));
+}
+
+function SkillTag({ skill }) {
+  const s = SKILLS[skill];
+  if (!s) return null;
+  return <span className={`skill-tag ${s.color}`}>{s.label}</span>;
+}
+
+function App() {
+  const [weekIdx, setWeekIdx] = useState(0);
+  const [tab, setTab] = useState('today');
+  const [dayIdx, setDayIdx] = useState(new Date().getDay() === 0 ? 6 : new Date().getDay() - 1);
+  const [checks, setChecks] = useState({});
+
+  const weeks = window.PLAN_DATA || [];
+  const week = weeks[weekIdx];
+
+  useEffect(() => {
+    if (week) setChecks(loadChecks(week.week));
+  }, [weekIdx]);
+
+  const toggleCheck = useCallback((key) => {
+    setChecks(prev => {
+      const next = { ...prev, [key]: !prev[key] };
+      if (week) saveChecks(week.week, next);
+      return next;
+    });
+  }, [week]);
+
+  const totalTasks = useMemo(() => {
+    if (!week) return 0;
+    let count = 0;
+    DAYS.forEach(d => { if (week.days[d]) count += week.days[d].length; });
+    return count;
+  }, [week]);
+
+  const doneTasks = useMemo(() => {
+    return Object.values(checks).filter(Boolean).length;
+  }, [checks]);
+
+  const overallProgress = useMemo(() => {
+    let total = 0, done = 0;
+    weeks.forEach(w => {
+      DAYS.forEach(d => { if (w.days[d]) total += w.days[d].length; });
+      const c = loadChecks(w.week);
+      done += Object.values(c).filter(Boolean).length;
+    });
+    return total > 0 ? Math.round((done / total) * 100) : 0;
+  }, [checks, weeks]);
+
+  if (!week) return <div style={{padding:40,textAlign:'center'}}>Loading data... Make sure data.js is in the same folder.</div>;
+
+  const daySlots = week.days[DAYS[dayIdx]] || [];
+
+  const renderSlot = (slot, idx) => {
+    const key = `${DAYS[dayIdx]}_${idx}`;
+    return (
+      <div className="schedule-slot" key={idx}>
+        <div className="slot-time">
+          <div className="checkbox" style={{display:'inline-flex',marginRight:8,verticalAlign:'middle'}} className={`checkbox ${checks[key]?'checked':''}`} onClick={() => toggleCheck(key)}>
+            {checks[key] && '✓'}
+          </div>
+          {slot.time}
+        </div>
+        <div className="slot-body">
+          <div className="slot-title">
+            {slot.routine} <SkillTag skill={slot.skill} />
+          </div>
+          <div className="slot-detail">{slot.activity}</div>
+          {slot.resource && (
+            <a className="slot-link" href={slot.url} target="_blank" rel="noopener">
+              🔗 {slot.resource}
+            </a>
+          )}
+          {slot.habitTip && (
+            <div style={{fontSize:'.8rem',color:'var(--orange)',marginTop:6,fontStyle:'italic',background:'#FEF9E7',padding:'4px 8px',borderRadius:6}}>
+              💡 Atomic Habit: {slot.habitTip}
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  };
+
+  const renderGrammar = () => {
+    if (!week.grammar || week.grammar.length === 0) return null;
+    return (
+      <div className="card">
+        <h3><span className="icon">📐</span> Grammar Topics — Kwiziq Lessons</h3>
+        <table className="grammar-table">
+          <thead><tr><th>Topic</th><th>Kwiziq Lesson</th></tr></thead>
+          <tbody>
+            {week.grammar.map((g, i) => (
+              <tr key={i}>
+                <td>
+                  <div className="topic-name">{g.topic}</div>
+                  {g.french && <div className="topic-french">{g.french}</div>}
+                </td>
+                <td>
+                  {g.url ? <a href={g.url} target="_blank" rel="noopener">{g.url.replace('https://french.kwiziq.com/revision/grammar/','')}</a> : 'See Kwiziq'}
+                  {g.practiceUrl && <div style={{marginTop:4}}><a href={g.practiceUrl} target="_blank" rel="noopener" style={{fontSize:'.8rem'}}>+ Related practice</a></div>}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  };
+
+  const renderTracker = () => {
+    const habits = ['Dog walk audio','Commute → audio','Coffee vocab','Lunch grammar+writing','Lunch reading','Commute ← audio','Evening speaking','Anki review'];
+    return (
+      <div className="card">
+        <h3><span className="icon">✅</span> Weekly Habit Tracker</h3>
+        <div className="tracker-grid">
+          <div></div>
+          {DAY_LABELS.map(d => <div className="tracker-header" key={d}>{d}</div>)}
+          {habits.map((h, hi) => (
+            <React.Fragment key={hi}>
+              <div className="tracker-habit">{h}</div>
+              {DAYS.map((d, di) => {
+                const k = `tracker_${hi}_${di}`;
+                return (
+                  <div key={k} className={`tracker-cell ${checks[k]?'done':''}`} onClick={() => toggleCheck(k)}>
+                    {checks[k] ? '✓' : ''}
+                  </div>
+                );
+              })}
+            </React.Fragment>
+          ))}
+        </div>
+      </div>
+    );
+  };
+
+  const renderResources = () => {
+    if (!week.resources || week.resources.length === 0) return null;
+    return (
+      <div className="card">
+        <h3><span className="icon">🔗</span> This Week's Resources</h3>
+        <ul className="resource-list">
+          {week.resources.map((r, i) => (
+            <li key={i}>
+              <a className="resource-name" href={r.url} target="_blank" rel="noopener">{r.name}</a>
+              <span className="resource-desc"> — {r.desc}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  };
+
+  const renderWritingPrompts = () => {
+    if (!week.writingPrompts || week.writingPrompts.length === 0) return null;
+    return (
+      <div className="card">
+        <h3><span className="icon">✍️</span> Writing Prompts This Week</h3>
+        {week.writingPrompts.map((p, i) => (
+          <div key={i} style={{padding:'8px 0',borderBottom:'1px solid #f5f5f5'}}>
+            <div style={{fontWeight:600,fontSize:'.9rem'}}>{p.day}: {p.title}</div>
+            <div style={{fontSize:'.85rem',color:'var(--gray)',marginTop:2}}>{p.prompt}</div>
+            {p.wordCount && <div style={{fontSize:'.8rem',color:'var(--orange)',marginTop:2}}>Target: {p.wordCount} words</div>}
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  const renderSpeakingTasks = () => {
+    if (!week.speakingTasks || week.speakingTasks.length === 0) return null;
+    return (
+      <div className="card">
+        <h3><span className="icon">🗣️</span> Speaking Tasks This Week</h3>
+        {week.speakingTasks.map((s, i) => (
+          <div key={i} style={{padding:'8px 0',borderBottom:'1px solid #f5f5f5'}}>
+            <div style={{fontWeight:600,fontSize:'.9rem'}}>{s.day}: {s.task}</div>
+            {s.tip && <div style={{fontSize:'.85rem',color:'var(--gray)',marginTop:2}}>💡 {s.tip}</div>}
+          </div>
+        ))}
+      </div>
+    );
+  };
+
+  const renderOverview = () => (
+    <>
+      <div className="identity-banner">
+        <div className="quote">"Je suis quelqu'un qui parle français."</div>
+        <div className="sub">Say this every morning. You are building your permanent residence.</div>
+      </div>
+      <div className="stats-row">
+        <div className="stat"><div className="stat-value">{overallProgress}%</div><div className="stat-label">Overall Progress</div></div>
+        <div className="stat"><div className="stat-value">Week {week.week}</div><div className="stat-label">of 26</div></div>
+        <div className="stat"><div className="stat-value">{week.cefrTarget}</div><div className="stat-label">CEFR Target</div></div>
+        <div className="stat"><div className="stat-value">{week.vocabTarget || '—'}</div><div className="stat-label">Vocab Target</div></div>
+      </div>
+      <div className="progress-bar"><div className="progress-fill" style={{width:`${(week.week/26)*100}%`}}></div></div>
+      <div className="card">
+        <h3><span className="icon">🎯</span> Week {week.week}: {week.title}</h3>
+        <p style={{fontSize:'.9rem',color:'var(--gray)',marginBottom:8}}>{week.dateRange} — Month {week.month}</p>
+        <p style={{fontSize:'.9rem'}}>{week.theme}</p>
+        {week.milestone && <p style={{fontSize:'.9rem',fontWeight:600,color:'var(--green)',marginTop:8}}>🏆 {week.milestone}</p>}
+      </div>
+    </>
+  );
+
+  return (
+    <>
+      <div className="header">
+        <div className="container header-row">
+          <div>
+            <h1>OPERATION NCLC 7</h1>
+            <p>6-Month French Plan for Ronald — CRS 534</p>
+          </div>
+          <div className="week-nav">
+            <button onClick={() => setWeekIdx(i => i - 1)} disabled={weekIdx === 0}>◀</button>
+            <span className="week-label">Week {week.week}/26</span>
+            <button onClick={() => setWeekIdx(i => i + 1)} disabled={weekIdx >= weeks.length - 1}>▶</button>
+          </div>
+        </div>
+      </div>
+      <div className="container" style={{paddingTop:8,paddingBottom:40}}>
+        <div className="tabs">
+          {[
+            ['today','📅 Today'],['week','📋 Full Week'],['grammar','📐 Grammar'],
+            ['writing','✍️ Writing'],['speaking','🗣️ Speaking'],['tracker','✅ Tracker'],
+            ['resources','🔗 Resources'],['overview','🎯 Overview']
+          ].map(([id,label]) => (
+            <button key={id} className={`tab ${tab===id?'active':''}`} onClick={() => setTab(id)}>{label}</button>
+          ))}
+        </div>
+
+        {tab === 'overview' && renderOverview()}
+
+        {tab === 'today' && (
+          <>
+            <div className="day-pills">
+              {DAY_LABELS.map((d, i) => (
+                <button key={i} className={`day-pill ${dayIdx===i?'active':''}`} onClick={() => setDayIdx(i)}>{d}</button>
+              ))}
+            </div>
+            <div className="card">
+              <h3><span className="icon">📅</span> {DAY_LABELS[dayIdx]}'s Schedule</h3>
+              {daySlots.length === 0
+                ? <p style={{color:'var(--gray)',fontSize:'.9rem'}}>No activities scheduled for this day.</p>
+                : daySlots.map(renderSlot)
+              }
+            </div>
+            <div style={{fontSize:'.85rem',color:'var(--gray)',textAlign:'center',marginTop:8}}>
+              {doneTasks}/{totalTasks} tasks completed this week
+            </div>
+          </>
+        )}
+
+        {tab === 'week' && (
+          <>
+            {DAYS.map((d, di) => {
+              const slots = week.days[d] || [];
+              if (slots.length === 0) return null;
+              return (
+                <div className="card" key={d}>
+                  <h3><span className="icon">📅</span> {DAY_LABELS[di]}</h3>
+                  {slots.map((slot, si) => renderSlot(slot, `${d}_${si}`))}
+                </div>
+              );
+            })}
+          </>
+        )}
+
+        {tab === 'grammar' && renderGrammar()}
+        {tab === 'writing' && renderWritingPrompts()}
+        {tab === 'speaking' && renderSpeakingTasks()}
+        {tab === 'tracker' && renderTracker()}
+        {tab === 'resources' && renderResources()}
+      </div>
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+<div id="root"></div>
+</body>
+</html>
