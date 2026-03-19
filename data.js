@@ -510,9 +510,9 @@ window.PLAN_DATA = [
         {
           "time": "10:00 AM",
           "routine": "Anki + Grammar",
-          "activity": "Install Anki + French A1 deck. Review 20 cards. Then Kwiziq quiz (10 free/month).",
+          "activity": "Install Anki + download \"French 5000 most common words\" shared deck from AnkiWeb (search \"French 5000\"). Review 20 cards. Settings: 20 new cards/day, graduating interval 1 day, easy interval 4 days.",
           "resource": "Anki",
-          "url": "https://apps.ankiweb.net/",
+          "url": "https://ankiweb.net/shared/decks?search=french%205000",
           "skill": "review",
           "duration": "15 min"
         },
@@ -556,6 +556,15 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read a simple French children's article on Lingua.com. Highlight unknown words.",
+          "resource": "Lingua.com French",
+          "url": "https://lingua.com/french/reading/",
+          "skill": "reading",
+          "duration": "10 min"
+        },
+        {
           "time": "11:00 AM",
           "routine": "Writing review",
           "activity": "Re-read all writing from the week. Fix errors. Rewrite the best piece cleanly.",
@@ -571,15 +580,6 @@ window.PLAN_DATA = [
           "resource": "Voice Memo",
           "url": "https://www.hellotalk.com/",
           "skill": "speaking",
-          "duration": "10 min"
-        },
-        {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read a simple French children's article on Lingua.com. Highlight unknown words.",
-          "resource": "Lingua.com French",
-          "url": "https://lingua.com/french/reading/",
-          "skill": "reading",
           "duration": "10 min"
         }
       ]
@@ -711,7 +711,75 @@ window.PLAN_DATA = [
         "url": "https://open.spotify.com/playlist/37i9dQZF1DWTwzVdyRpRiG",
         "desc": "French hits — Stromae, Angèle, Indila, Louane."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 2,
@@ -1264,6 +1332,15 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read today's Kwiziq grammar lesson examples aloud. Notice spelling patterns.",
+          "resource": "Kwiziq examples",
+          "url": "https://french.kwiziq.com/revision/grammar/",
+          "skill": "reading",
+          "duration": "10 min"
+        },
+        {
           "time": "11:00 AM",
           "routine": "Writing review",
           "activity": "Re-read all writing from weeks 1–2. Fix errors. Note recurring mistakes.",
@@ -1279,15 +1356,6 @@ window.PLAN_DATA = [
           "resource": "Voice Memo",
           "url": "https://www.hellotalk.com/",
           "skill": "speaking",
-          "duration": "10 min"
-        },
-        {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read today's Kwiziq grammar lesson examples aloud. Notice spelling patterns.",
-          "resource": "Kwiziq examples",
-          "url": "https://french.kwiziq.com/revision/grammar/",
-          "skill": "reading",
           "duration": "10 min"
         }
       ]
@@ -1404,7 +1472,75 @@ window.PLAN_DATA = [
         "url": "https://www.hellotalk.com/",
         "desc": "First real conversation with a native speaker."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 3,
@@ -1942,15 +2078,6 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
-          "time": "11:00 AM",
-          "routine": "Writing review",
-          "activity": "Re-read all writing from Week 3. Check adjective agreement. Fix errors.",
-          "resource": "BonPatron",
-          "url": "https://bonpatron.com/en/",
-          "skill": "writing",
-          "duration": "15 min"
-        },
-        {
           "time": "10:30 AM",
           "routine": "Morning study",
           "activity": "Read 1 Duolingo Story (Series 1). Focus on cognates with Spanish.",
@@ -1958,6 +2085,15 @@ window.PLAN_DATA = [
           "url": "https://www.duolingo.com/",
           "skill": "reading",
           "duration": "10 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "Writing review",
+          "activity": "Re-read all writing from Week 3. Check adjective agreement. Fix errors.",
+          "resource": "BonPatron",
+          "url": "https://bonpatron.com/en/",
+          "skill": "writing",
+          "duration": "15 min"
         },
         {
           "time": "7:00 PM",
@@ -2067,7 +2203,75 @@ window.PLAN_DATA = [
         "url": "https://www.youtube.com/@EasyFrench",
         "desc": "Street interviews — listen for adjectives."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 4,
@@ -2611,15 +2815,6 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
-          "time": "11:00 AM",
-          "routine": "Review",
-          "activity": "Anki review + make list of Month 2 goals.",
-          "resource": "Anki",
-          "url": "https://apps.ankiweb.net/",
-          "skill": "review",
-          "duration": "15 min"
-        },
-        {
           "time": "10:30 AM",
           "routine": "Morning study",
           "activity": "Read a simple French children's article on Lingua.com. Highlight unknown words.",
@@ -2627,6 +2822,15 @@ window.PLAN_DATA = [
           "url": "https://lingua.com/french/reading/",
           "skill": "reading",
           "duration": "10 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "Review",
+          "activity": "Anki review + make list of Month 2 goals.",
+          "resource": "Anki",
+          "url": "https://apps.ankiweb.net/",
+          "skill": "review",
+          "duration": "15 min"
         },
         {
           "time": "7:00 PM",
@@ -2736,7 +2940,75 @@ window.PLAN_DATA = [
         "url": "https://french.kwiziq.com/test",
         "desc": "Take the full test to measure Month 1 progress."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 5,
@@ -3246,6 +3518,16 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "Tutor session",
+          "activity": "italki: 30-min session with a community tutor. Focus on self-introduction, daily routine, simple past tense narration. Prepare 5 questions in advance.",
+          "resource": "italki",
+          "url": "https://www.italki.com/en/teachers/french",
+          "skill": "speaking",
+          "duration": "30 min",
+          "habitTip": "Accountability partner: A booked tutor session is a commitment you won't skip."
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: 25-min conversation. Tell your partner what you did this week.",
@@ -3285,15 +3567,6 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
-          "time": "11:00 AM",
-          "routine": "Writing review",
-          "activity": "Review all writing. Correct PC errors: agreement, auxiliary choice.",
-          "resource": "BonPatron",
-          "url": "https://bonpatron.com/en/",
-          "skill": "writing",
-          "duration": "15 min"
-        },
-        {
           "time": "10:30 AM",
           "routine": "Morning study",
           "activity": "Read 1 Duolingo Story (Series 2-3). Predict what happens next.",
@@ -3301,6 +3574,15 @@ window.PLAN_DATA = [
           "url": "https://www.duolingo.com/",
           "skill": "reading",
           "duration": "10 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "Writing review",
+          "activity": "Review all writing. Correct PC errors: agreement, auxiliary choice.",
+          "resource": "BonPatron",
+          "url": "https://bonpatron.com/en/",
+          "skill": "writing",
+          "duration": "15 min"
         },
         {
           "time": "7:00 PM",
@@ -3415,7 +3697,80 @@ window.PLAN_DATA = [
         "url": "https://french.kwiziq.com/revision/grammar/by-cefr-level/cefr-a2",
         "desc": "All passé composé lessons."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        },
+        {
+          "id": "tutor",
+          "label": "italki tutor session (Saturday)",
+          "icon": "👨‍🏫"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 6,
@@ -3919,6 +4274,15 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "Tutor session",
+          "activity": "italki: 30-min session with a community tutor. Focus on self-introduction, daily routine, simple past tense narration. Prepare 5 questions in advance.",
+          "resource": "italki",
+          "url": "https://www.italki.com/en/teachers/french",
+          "skill": "speaking",
+          "duration": "30 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: 25-min conversation. Tell a story from your past.",
@@ -3958,6 +4322,15 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 article on Le Journal en Français Facile (RFI). Note 5 new words.",
+          "resource": "RFI Journal Facile",
+          "url": "https://savoirs.rfi.fr/fr/apprendre-enseigner/langue-francaise/journal-en-francais-facile",
+          "skill": "reading",
+          "duration": "10 min"
+        },
+        {
           "time": "11:00 AM",
           "routine": "Writing",
           "activity": "Review all Week 6 writing. Check PC vs imparfait usage.",
@@ -3974,15 +4347,6 @@ window.PLAN_DATA = [
           "url": "https://apps.ankiweb.net/",
           "skill": "review",
           "duration": "15 min"
-        },
-        {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 article on Le Journal en Français Facile (RFI). Note 5 new words.",
-          "resource": "RFI Journal Facile",
-          "url": "https://savoirs.rfi.fr/fr/apprendre-enseigner/langue-francaise/journal-en-francais-facile",
-          "skill": "reading",
-          "duration": "10 min"
         },
         {
           "time": "7:00 PM",
@@ -4086,7 +4450,80 @@ window.PLAN_DATA = [
         "url": "https://french.kwiziq.com/revision/grammar/by-cefr-level/cefr-a2",
         "desc": "Imparfait, PC vs imparfait, object pronouns."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        },
+        {
+          "id": "tutor",
+          "label": "italki tutor session (Saturday)",
+          "icon": "👨‍🏫"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 7,
@@ -4580,6 +5017,15 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "Tutor session",
+          "activity": "italki: 30-min session with a community tutor. Focus on self-introduction, daily routine, simple past tense narration. Prepare 5 questions in advance.",
+          "resource": "italki",
+          "url": "https://www.italki.com/en/teachers/french",
+          "skill": "speaking",
+          "duration": "30 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: 25-min conversation. Compare things — food, weather, culture.",
@@ -4619,6 +5065,15 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read a TV5Monde A2 text. Answer comprehension questions.",
+          "resource": "TV5Monde A2",
+          "url": "https://apprendre.tv5monde.com/en/exercises/a2-elementary",
+          "skill": "reading",
+          "duration": "10 min"
+        },
+        {
           "time": "11:00 AM",
           "routine": "Writing",
           "activity": "Review and polish all writing from Week 7.",
@@ -4635,15 +5090,6 @@ window.PLAN_DATA = [
           "url": "https://apps.ankiweb.net/",
           "skill": "review",
           "duration": "15 min"
-        },
-        {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read a TV5Monde A2 text. Answer comprehension questions.",
-          "resource": "TV5Monde A2",
-          "url": "https://apprendre.tv5monde.com/en/exercises/a2-elementary",
-          "skill": "reading",
-          "duration": "10 min"
         },
         {
           "time": "7:00 PM",
@@ -4742,7 +5188,80 @@ window.PLAN_DATA = [
         "url": "https://french.kwiziq.com/revision/grammar/by-cefr-level/cefr-a2",
         "desc": "Comparisons, adverbs, demonstratives."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        },
+        {
+          "id": "tutor",
+          "label": "italki tutor session (Saturday)",
+          "icon": "👨‍🏫"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 8,
@@ -5252,6 +5771,15 @@ window.PLAN_DATA = [
           "duration": "25 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "Tutor session",
+          "activity": "italki: 30-min session with a community tutor. Focus on self-introduction, daily routine, simple past tense narration. Prepare 5 questions in advance.",
+          "resource": "italki",
+          "url": "https://www.italki.com/en/teachers/french",
+          "skill": "speaking",
+          "duration": "30 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: 30-min conversation. Discuss past, present, future plans.",
@@ -5291,15 +5819,6 @@ window.PLAN_DATA = [
           "duration": "25 min"
         },
         {
-          "time": "11:00 AM",
-          "routine": "Planning",
-          "activity": "Anki review + prepare for Month 3 (B1 territory!).",
-          "resource": "Anki",
-          "url": "https://apps.ankiweb.net/",
-          "skill": "review",
-          "duration": "15 min"
-        },
-        {
           "time": "10:30 AM",
           "routine": "Morning study",
           "activity": "Read 1 Duolingo Story (Series 2-3). Predict what happens next.",
@@ -5307,6 +5826,15 @@ window.PLAN_DATA = [
           "url": "https://www.duolingo.com/",
           "skill": "reading",
           "duration": "10 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "Planning",
+          "activity": "Anki review + prepare for Month 3 (B1 territory!).",
+          "resource": "Anki",
+          "url": "https://apps.ankiweb.net/",
+          "skill": "review",
+          "duration": "15 min"
         },
         {
           "time": "7:00 PM",
@@ -5424,7 +5952,80 @@ window.PLAN_DATA = [
         "url": "https://french.kwiziq.com/revision/grammar/by-cefr-level/cefr-a2",
         "desc": "Futur, expanded negation, ne...que."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        },
+        {
+          "id": "tutor",
+          "label": "italki tutor session (Saturday)",
+          "icon": "👨‍🏫"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 9,
@@ -5904,6 +6505,15 @@ window.PLAN_DATA = [
           "duration": "25 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "Tutor session",
+          "activity": "italki: 45-min session with a professional teacher. Practice narration (PC vs imparfait), conditional, opinion-giving. Ask for correction notes after.",
+          "resource": "italki",
+          "url": "https://www.italki.com/en/teachers/french",
+          "skill": "speaking",
+          "duration": "45 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: 30-min conversation. Tell stories from your past. Ask partner about theirs.",
@@ -5943,6 +6553,15 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 article on TV5Monde B1. Summarize in 3 sentences.",
+          "resource": "TV5Monde B1",
+          "url": "https://apprendre.tv5monde.com/en/exercises/b1-intermediate",
+          "skill": "reading",
+          "duration": "15 min"
+        },
+        {
           "time": "11:00 AM",
           "routine": "Writing",
           "activity": "Review all Week 9 writing. Fix tense errors.",
@@ -5958,15 +6577,6 @@ window.PLAN_DATA = [
           "resource": "Anki",
           "url": "https://apps.ankiweb.net/",
           "skill": "review",
-          "duration": "15 min"
-        },
-        {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 article on TV5Monde B1. Summarize in 3 sentences.",
-          "resource": "TV5Monde B1",
-          "url": "https://apprendre.tv5monde.com/en/exercises/b1-intermediate",
-          "skill": "reading",
           "duration": "15 min"
         },
         {
@@ -6081,7 +6691,80 @@ window.PLAN_DATA = [
         "url": "https://savoirs.rfi.fr/fr/apprendre-enseigner/langue-francaise",
         "desc": "Articles for intermediate readers."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        },
+        {
+          "id": "tutor",
+          "label": "italki tutor session (Saturday)",
+          "icon": "👨‍🏫"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 10,
@@ -6571,6 +7254,15 @@ window.PLAN_DATA = [
           "duration": "25 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "Tutor session",
+          "activity": "italki: 45-min session with a professional teacher. Practice narration (PC vs imparfait), conditional, opinion-giving. Ask for correction notes after.",
+          "resource": "italki",
+          "url": "https://www.italki.com/en/teachers/french",
+          "skill": "speaking",
+          "duration": "45 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: 30-min conversation. Practice hypotheticals + opinions.",
@@ -6610,6 +7302,15 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 RFI Français Facile article. Write 5 questions about it.",
+          "resource": "RFI Français Facile",
+          "url": "https://savoirs.rfi.fr/fr/apprendre-enseigner/langue-francaise",
+          "skill": "reading",
+          "duration": "15 min"
+        },
+        {
           "time": "11:00 AM",
           "routine": "Writing",
           "activity": "Polish all Week 10 writing.",
@@ -6625,15 +7326,6 @@ window.PLAN_DATA = [
           "resource": "Anki",
           "url": "https://apps.ankiweb.net/",
           "skill": "review",
-          "duration": "15 min"
-        },
-        {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 RFI Français Facile article. Write 5 questions about it.",
-          "resource": "RFI Français Facile",
-          "url": "https://savoirs.rfi.fr/fr/apprendre-enseigner/langue-francaise",
-          "skill": "reading",
           "duration": "15 min"
         },
         {
@@ -6743,7 +7435,80 @@ window.PLAN_DATA = [
         "url": "https://french.kwiziq.com/revision/grammar/by-cefr-level/cefr-b1",
         "desc": "Conditional, si clauses, quand+futur."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        },
+        {
+          "id": "tutor",
+          "label": "italki tutor session (Saturday)",
+          "icon": "👨‍🏫"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 11,
@@ -7219,6 +7984,15 @@ window.PLAN_DATA = [
           "duration": "25 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "Tutor session",
+          "activity": "italki: 45-min session with a professional teacher. Practice narration (PC vs imparfait), conditional, opinion-giving. Ask for correction notes after.",
+          "resource": "italki",
+          "url": "https://www.italki.com/en/teachers/french",
+          "skill": "speaking",
+          "duration": "45 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: 30-min conversation. Express opinions + hypotheticals.",
@@ -7258,6 +8032,15 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 News in Slow French transcript. Circle subjunctive verbs.",
+          "resource": "News in Slow French",
+          "url": "https://www.newsinslowfrench.com/",
+          "skill": "reading",
+          "duration": "15 min"
+        },
+        {
           "time": "11:00 AM",
           "routine": "Writing",
           "activity": "Polish all Week 11 writing.",
@@ -7273,15 +8056,6 @@ window.PLAN_DATA = [
           "resource": "Anki",
           "url": "https://apps.ankiweb.net/",
           "skill": "review",
-          "duration": "15 min"
-        },
-        {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 News in Slow French transcript. Circle subjunctive verbs.",
-          "resource": "News in Slow French",
-          "url": "https://www.newsinslowfrench.com/",
-          "skill": "reading",
           "duration": "15 min"
         },
         {
@@ -7386,7 +8160,80 @@ window.PLAN_DATA = [
         "url": "https://french.kwiziq.com/revision/grammar/by-cefr-level/cefr-b1",
         "desc": "Relative pronouns, démonstratifs."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        },
+        {
+          "id": "tutor",
+          "label": "italki tutor session (Saturday)",
+          "icon": "👨‍🏫"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 12,
@@ -7863,6 +8710,15 @@ window.PLAN_DATA = [
           "duration": "30 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "Tutor session",
+          "activity": "italki: 45-min session with a professional teacher. Practice narration (PC vs imparfait), conditional, opinion-giving. Ask for correction notes after.",
+          "resource": "italki",
+          "url": "https://www.italki.com/en/teachers/french",
+          "skill": "speaking",
+          "duration": "45 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: 30-min conversation. You're halfway! Discuss progress.",
@@ -8026,7 +8882,80 @@ window.PLAN_DATA = [
         "url": "https://www.lemonde.fr/",
         "desc": "French reading."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        },
+        {
+          "id": "tutor",
+          "label": "italki tutor session (Saturday)",
+          "icon": "👨‍🏫"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 13,
@@ -8034,7 +8963,7 @@ window.PLAN_DATA = [
     "cefrTarget": "B1+",
     "dateRange": "Jun 8–14, 2026",
     "title": "Subjunctive Deepening & Advanced Expressions",
-    "theme": "Deepen subjunctive mastery. Think in French. 100% natural-speed listening. TEF writing starts.",
+    "theme": "Deepen subjunctive mastery. Think in French. 100% natural-speed listening. TEF writing starts. Book TEF Canada exam for late August at https://www.lefrancaisdesaffaires.fr/en/tests-diplomas/tef-canada/",
     "vocabTarget": 2200,
     "milestone": "Use subjunctive naturally in conversation",
     "grammar": [
@@ -8534,6 +9463,15 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "Tutor session",
+          "activity": "italki: 45-min session. Practice argumentation, subjunctive in context, debating current topics. Request written feedback.",
+          "resource": "italki",
+          "url": "https://www.italki.com/en/teachers/french",
+          "skill": "speaking",
+          "duration": "45 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: 30-min conversation. Discuss opinions + hypotheticals.",
@@ -8573,21 +9511,21 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
-          "time": "11:00 AM",
-          "routine": "Writing review",
-          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
-          "resource": "BonPatron",
-          "url": "https://bonpatron.com/en/",
-          "skill": "writing",
-          "duration": "15 min"
-        },
-        {
           "time": "10:30 AM",
           "routine": "Morning study",
           "activity": "Read 1 RFI Français Facile article. Write 5 questions about it.",
           "resource": "RFI Français Facile",
           "url": "https://savoirs.rfi.fr/fr/apprendre-enseigner/langue-francaise",
           "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "Writing review",
+          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
+          "resource": "BonPatron",
+          "url": "https://bonpatron.com/en/",
+          "skill": "writing",
           "duration": "15 min"
         },
         {
@@ -8697,7 +9635,80 @@ window.PLAN_DATA = [
         "url": "https://www.lemonde.fr/",
         "desc": "French newspaper reading."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        },
+        {
+          "id": "tutor",
+          "label": "italki tutor session (Saturday)",
+          "icon": "👨‍🏫"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 14,
@@ -9202,6 +10213,15 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "Tutor session",
+          "activity": "italki: 45-min session. Practice argumentation, subjunctive in context, debating current topics. Request written feedback.",
+          "resource": "italki",
+          "url": "https://www.italki.com/en/teachers/french",
+          "skill": "speaking",
+          "duration": "45 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: 30-min conversation. Focus on using pronouns.",
@@ -9241,21 +10261,21 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
-          "time": "11:00 AM",
-          "routine": "Writing review",
-          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
-          "resource": "BonPatron",
-          "url": "https://bonpatron.com/en/",
-          "skill": "writing",
-          "duration": "15 min"
-        },
-        {
           "time": "10:30 AM",
           "routine": "Morning study",
           "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
           "resource": "TV5Monde B2",
           "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
           "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "Writing review",
+          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
+          "resource": "BonPatron",
+          "url": "https://bonpatron.com/en/",
+          "skill": "writing",
           "duration": "15 min"
         },
         {
@@ -9360,7 +10380,80 @@ window.PLAN_DATA = [
         "url": "https://french.kwiziq.com/revision/grammar/by-cefr-level/cefr-b2",
         "desc": "Y, EN, double pronouns."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        },
+        {
+          "id": "tutor",
+          "label": "italki tutor session (Saturday)",
+          "icon": "👨‍🏫"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 15,
@@ -9868,6 +10961,15 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "Tutor session",
+          "activity": "italki: 45-min session. Practice argumentation, subjunctive in context, debating current topics. Request written feedback.",
+          "resource": "italki",
+          "url": "https://www.italki.com/en/teachers/french",
+          "skill": "speaking",
+          "duration": "45 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: 30-min conversation about work/life balance.",
@@ -9907,21 +11009,21 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
-          "time": "11:00 AM",
-          "routine": "Writing review",
-          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
-          "resource": "BonPatron",
-          "url": "https://bonpatron.com/en/",
-          "skill": "writing",
-          "duration": "15 min"
-        },
-        {
           "time": "10:30 AM",
           "routine": "Morning study",
           "activity": "Read 1 Le Monde article. Write a 3-sentence opinion in French.",
           "resource": "Le Monde",
           "url": "https://www.lemonde.fr/",
           "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "Writing review",
+          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
+          "resource": "BonPatron",
+          "url": "https://bonpatron.com/en/",
+          "skill": "writing",
           "duration": "15 min"
         },
         {
@@ -10026,7 +11128,80 @@ window.PLAN_DATA = [
         "url": "https://innerfrench.com/podcast/",
         "desc": "B2 listening."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        },
+        {
+          "id": "tutor",
+          "label": "italki tutor session (Saturday)",
+          "icon": "👨‍🏫"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 16,
@@ -10529,6 +11704,15 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "Tutor session",
+          "activity": "italki: 45-min session. Practice argumentation, subjunctive in context, debating current topics. Request written feedback.",
+          "resource": "italki",
+          "url": "https://www.italki.com/en/teachers/french",
+          "skill": "speaking",
+          "duration": "45 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: 30-min conversation. You're B2 now!",
@@ -10568,21 +11752,21 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
-          "time": "11:00 AM",
-          "routine": "Writing review",
-          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
-          "resource": "BonPatron",
-          "url": "https://bonpatron.com/en/",
-          "skill": "writing",
-          "duration": "15 min"
-        },
-        {
           "time": "10:30 AM",
           "routine": "Morning study",
           "activity": "Read 1 Radio-Canada article. Identify 3 complex sentence structures used.",
           "resource": "Radio-Canada",
           "url": "https://ici.radio-canada.ca/",
           "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "Writing review",
+          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
+          "resource": "BonPatron",
+          "url": "https://bonpatron.com/en/",
+          "skill": "writing",
           "duration": "15 min"
         },
         {
@@ -10692,7 +11876,80 @@ window.PLAN_DATA = [
         "url": "https://www.lefrancaisdesaffaires.fr/en/candidate/test-evaluation-francais/tef-canada/registration/",
         "desc": "Register for August/September date."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute audio (AM + PM)",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "grammar",
+          "label": "Lunch grammar study",
+          "icon": "📖"
+        },
+        {
+          "id": "writing",
+          "label": "Writing practice",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "Reading practice",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Evening speaking recording",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "writing_wknd",
+          "label": "Writing session",
+          "icon": "✍️"
+        },
+        {
+          "id": "speaking_wknd",
+          "label": "Speaking practice",
+          "icon": "🎤"
+        },
+        {
+          "id": "video",
+          "label": "French video/media",
+          "icon": "📺"
+        },
+        {
+          "id": "reading_wknd",
+          "label": "Reading session",
+          "icon": "📰"
+        },
+        {
+          "id": "tutor",
+          "label": "italki tutor session (Saturday)",
+          "icon": "👨‍🏫"
+        }
+      ],
+      "streakGoal": "Never miss two days in a row. If you miss Monday, Tuesday is non-negotiable."
+    }
   },
   {
     "week": 17,
@@ -10702,7 +11959,7 @@ window.PLAN_DATA = [
     "title": "TEF Listening Intensive",
     "theme": "EXAM PREP: Drill listening comprehension. Exam-format practice. Book TEF for August if not yet done.",
     "vocabTarget": 3200,
-    "milestone": "Sharpen listening for TEF/TCF.",
+    "milestone": "Sharpen listening for TEF Canada.",
     "grammar": [
       {
         "topic": "Futur antérieur (recognition)",
@@ -11164,6 +12421,15 @@ window.PLAN_DATA = [
       ],
       "saturday": [
         {
+          "time": "7:00 AM",
+          "routine": "Morning audio",
+          "activity": "Listen to Coffee Break French while getting ready.",
+          "resource": "CBF",
+          "url": "https://youtube.com/coffeebreaklanguages",
+          "skill": "listening",
+          "duration": "15 min"
+        },
+        {
           "time": "9:00 AM",
           "routine": "FULL EXAM SIMULATION",
           "activity": "TEF practice: Listening section (45 min) + Reading section (1 hr)",
@@ -11172,6 +12438,24 @@ window.PLAN_DATA = [
           "skill": "all",
           "duration": "2 hrs",
           "habitTip": "Identity: 'I am becoming fluent in French. Each morning session proves it.'"
+        },
+        {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
+          "resource": "TV5Monde B2",
+          "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
+          "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "TEF speaking mock",
+          "activity": "italki: 60-min session with TEF-experienced tutor. Simulate Section B (oral expression): describe image, argue a position, debate. Get scored on TEF criteria.",
+          "resource": "italki (TEF prep tutor)",
+          "url": "https://www.italki.com/en/teachers/french?teacher_type=professional&speciality=test_preparation",
+          "skill": "speaking",
+          "duration": "60 min"
         },
         {
           "time": "12:00 PM",
@@ -11201,15 +12485,6 @@ window.PLAN_DATA = [
           "duration": "30 min"
         },
         {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
-          "resource": "TV5Monde B2",
-          "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
-          "skill": "reading",
-          "duration": "15 min"
-        },
-        {
           "time": "8:30 PM",
           "routine": "Evening – Writing",
           "activity": "Write 5 sentences about what you did today. Check on BonPatron.",
@@ -11217,7 +12492,9 @@ window.PLAN_DATA = [
           "url": "https://bonpatron.com/en/",
           "skill": "writing",
           "duration": "10 min"
-        },
+        }
+      ],
+      "sunday": [
         {
           "time": "7:00 AM",
           "routine": "Morning audio",
@@ -11226,9 +12503,7 @@ window.PLAN_DATA = [
           "url": "https://youtube.com/coffeebreaklanguages",
           "skill": "listening",
           "duration": "15 min"
-        }
-      ],
-      "sunday": [
+        },
         {
           "time": "9:00 AM",
           "routine": "Review",
@@ -11249,6 +12524,15 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
+          "resource": "TV5Monde B2",
+          "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
+          "skill": "reading",
+          "duration": "15 min"
+        },
+        {
           "time": "11:00 AM",
           "routine": "Weak skill drill",
           "activity": "Spend 30 min on your WEAKEST skill from the exam simulation.",
@@ -11267,15 +12551,6 @@ window.PLAN_DATA = [
           "duration": "—"
         },
         {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
-          "resource": "TV5Monde B2",
-          "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
-          "skill": "reading",
-          "duration": "15 min"
-        },
-        {
           "time": "7:00 PM",
           "routine": "Speaking practice",
           "activity": "Record a 2-minute monologue about your week. Listen back, note errors. Re-record once.",
@@ -11292,15 +12567,6 @@ window.PLAN_DATA = [
           "url": "https://bonpatron.com/en/",
           "skill": "writing",
           "duration": "10 min"
-        },
-        {
-          "time": "7:00 AM",
-          "routine": "Morning audio",
-          "activity": "Listen to Coffee Break French while getting ready.",
-          "resource": "CBF",
-          "url": "https://youtube.com/coffeebreaklanguages",
-          "skill": "listening",
-          "duration": "15 min"
         }
       ]
     },
@@ -11410,7 +12676,75 @@ window.PLAN_DATA = [
         "url": "https://www.radiofrance.fr/franceinter/podcasts",
         "desc": "Native-speed radio — exam listening."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute: TEF listening drills",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "tef_practice",
+          "label": "TEF section practice (lunch)",
+          "icon": "📝"
+        },
+        {
+          "id": "writing",
+          "label": "Timed writing exercise",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "TEF reading comprehension",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Speaking: TEF oral task",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French news podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "mock_exam",
+          "label": "TEF practice exam section",
+          "icon": "📋"
+        },
+        {
+          "id": "tutor",
+          "label": "italki TEF mock session",
+          "icon": "👨‍🏫"
+        },
+        {
+          "id": "weakness",
+          "label": "Weakness drill (lowest-scoring skill)",
+          "icon": "🎯"
+        },
+        {
+          "id": "review",
+          "label": "Weekly progress review",
+          "icon": "📊"
+        }
+      ],
+      "streakGoal": "Exam mode: every single day counts. Track completion rate — target 90%+."
+    }
   },
   {
     "week": 18,
@@ -11420,7 +12754,7 @@ window.PLAN_DATA = [
     "title": "TEF Reading & Writing Intensive",
     "theme": "EXAM PREP: Reading comprehension + timed writing. Formal letters + essays. Book TEF for August if not yet done.",
     "vocabTarget": 3400,
-    "milestone": "Sharpen reading+writing for TEF/TCF.",
+    "milestone": "Sharpen reading+writing for TEF Canada.",
     "grammar": [
       {
         "topic": "Comparisons with nouns",
@@ -11882,6 +13216,15 @@ window.PLAN_DATA = [
       ],
       "saturday": [
         {
+          "time": "7:00 AM",
+          "routine": "Morning audio",
+          "activity": "Listen to Coffee Break French while getting ready.",
+          "resource": "CBF",
+          "url": "https://youtube.com/coffeebreaklanguages",
+          "skill": "listening",
+          "duration": "15 min"
+        },
+        {
           "time": "9:00 AM",
           "routine": "FULL EXAM SIMULATION",
           "activity": "TEF practice: Writing section (1 hr) + Reading section (1 hr)",
@@ -11890,6 +13233,24 @@ window.PLAN_DATA = [
           "skill": "all",
           "duration": "2 hrs",
           "habitTip": "2-minute rule: Just watch the first 2 minutes. The rest follows naturally."
+        },
+        {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 Le Monde article. Write a 3-sentence opinion in French.",
+          "resource": "Le Monde",
+          "url": "https://www.lemonde.fr/",
+          "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "TEF speaking mock",
+          "activity": "italki: 60-min session with TEF-experienced tutor. Simulate Section B (oral expression): describe image, argue a position, debate. Get scored on TEF criteria.",
+          "resource": "italki (TEF prep tutor)",
+          "url": "https://www.italki.com/en/teachers/french?teacher_type=professional&speciality=test_preparation",
+          "skill": "speaking",
+          "duration": "60 min"
         },
         {
           "time": "12:00 PM",
@@ -11919,15 +13280,6 @@ window.PLAN_DATA = [
           "duration": "30 min"
         },
         {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 Le Monde article. Write a 3-sentence opinion in French.",
-          "resource": "Le Monde",
-          "url": "https://www.lemonde.fr/",
-          "skill": "reading",
-          "duration": "15 min"
-        },
-        {
           "time": "8:30 PM",
           "routine": "Evening – Writing",
           "activity": "Write 5 sentences about what you did today. Check on BonPatron.",
@@ -11935,7 +13287,9 @@ window.PLAN_DATA = [
           "url": "https://bonpatron.com/en/",
           "skill": "writing",
           "duration": "10 min"
-        },
+        }
+      ],
+      "sunday": [
         {
           "time": "7:00 AM",
           "routine": "Morning audio",
@@ -11944,9 +13298,7 @@ window.PLAN_DATA = [
           "url": "https://youtube.com/coffeebreaklanguages",
           "skill": "listening",
           "duration": "15 min"
-        }
-      ],
-      "sunday": [
+        },
         {
           "time": "9:00 AM",
           "routine": "Review",
@@ -11967,6 +13319,15 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 Le Monde article. Write a 3-sentence opinion in French.",
+          "resource": "Le Monde",
+          "url": "https://www.lemonde.fr/",
+          "skill": "reading",
+          "duration": "15 min"
+        },
+        {
           "time": "11:00 AM",
           "routine": "Weak skill drill",
           "activity": "Spend 30 min on your WEAKEST skill from the exam simulation.",
@@ -11985,15 +13346,6 @@ window.PLAN_DATA = [
           "duration": "—"
         },
         {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 Le Monde article. Write a 3-sentence opinion in French.",
-          "resource": "Le Monde",
-          "url": "https://www.lemonde.fr/",
-          "skill": "reading",
-          "duration": "15 min"
-        },
-        {
           "time": "7:00 PM",
           "routine": "Speaking practice",
           "activity": "Record a 2-minute monologue about your week. Listen back, note errors. Re-record once.",
@@ -12010,15 +13362,6 @@ window.PLAN_DATA = [
           "url": "https://bonpatron.com/en/",
           "skill": "writing",
           "duration": "10 min"
-        },
-        {
-          "time": "7:00 AM",
-          "routine": "Morning audio",
-          "activity": "Listen to Coffee Break French while getting ready.",
-          "resource": "CBF",
-          "url": "https://youtube.com/coffeebreaklanguages",
-          "skill": "listening",
-          "duration": "15 min"
         }
       ]
     },
@@ -12128,7 +13471,75 @@ window.PLAN_DATA = [
         "url": "https://www.radiofrance.fr/franceinter/podcasts",
         "desc": "Native-speed radio — exam listening."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute: TEF listening drills",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "tef_practice",
+          "label": "TEF section practice (lunch)",
+          "icon": "📝"
+        },
+        {
+          "id": "writing",
+          "label": "Timed writing exercise",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "TEF reading comprehension",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Speaking: TEF oral task",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French news podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "mock_exam",
+          "label": "TEF practice exam section",
+          "icon": "📋"
+        },
+        {
+          "id": "tutor",
+          "label": "italki TEF mock session",
+          "icon": "👨‍🏫"
+        },
+        {
+          "id": "weakness",
+          "label": "Weakness drill (lowest-scoring skill)",
+          "icon": "🎯"
+        },
+        {
+          "id": "review",
+          "label": "Weekly progress review",
+          "icon": "📊"
+        }
+      ],
+      "streakGoal": "Exam mode: every single day counts. Track completion rate — target 90%+."
+    }
   },
   {
     "week": 19,
@@ -12138,7 +13549,7 @@ window.PLAN_DATA = [
     "title": "TEF Speaking Intensive",
     "theme": "EXAM PREP: Oral expression tasks. Record, review, improve. Mock interviews. Book TEF for August if not yet done.",
     "vocabTarget": 3600,
-    "milestone": "Sharpen speaking for TEF/TCF.",
+    "milestone": "Sharpen speaking for TEF Canada.",
     "grammar": [
       {
         "topic": "Double pronouns review",
@@ -12600,6 +14011,15 @@ window.PLAN_DATA = [
       ],
       "saturday": [
         {
+          "time": "7:00 AM",
+          "routine": "Morning audio",
+          "activity": "Listen to Coffee Break French while getting ready.",
+          "resource": "CBF",
+          "url": "https://youtube.com/coffeebreaklanguages",
+          "skill": "listening",
+          "duration": "15 min"
+        },
+        {
           "time": "9:00 AM",
           "routine": "FULL EXAM SIMULATION",
           "activity": "TEF practice: Speaking tasks (20 min) + Listening section (45 min)",
@@ -12608,6 +14028,24 @@ window.PLAN_DATA = [
           "skill": "all",
           "duration": "2 hrs",
           "habitTip": "Habit stack: Alarm off → phone in hand → French video playing. Automate it."
+        },
+        {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 Radio-Canada article. Identify 3 complex sentence structures used.",
+          "resource": "Radio-Canada",
+          "url": "https://ici.radio-canada.ca/",
+          "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "TEF speaking mock",
+          "activity": "italki: 60-min session with TEF-experienced tutor. Simulate Section B (oral expression): describe image, argue a position, debate. Get scored on TEF criteria.",
+          "resource": "italki (TEF prep tutor)",
+          "url": "https://www.italki.com/en/teachers/french?teacher_type=professional&speciality=test_preparation",
+          "skill": "speaking",
+          "duration": "60 min"
         },
         {
           "time": "12:00 PM",
@@ -12637,15 +14075,6 @@ window.PLAN_DATA = [
           "duration": "30 min"
         },
         {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 Radio-Canada article. Identify 3 complex sentence structures used.",
-          "resource": "Radio-Canada",
-          "url": "https://ici.radio-canada.ca/",
-          "skill": "reading",
-          "duration": "15 min"
-        },
-        {
           "time": "8:30 PM",
           "routine": "Evening – Writing",
           "activity": "Write 5 sentences about what you did today. Check on BonPatron.",
@@ -12653,7 +14082,9 @@ window.PLAN_DATA = [
           "url": "https://bonpatron.com/en/",
           "skill": "writing",
           "duration": "10 min"
-        },
+        }
+      ],
+      "sunday": [
         {
           "time": "7:00 AM",
           "routine": "Morning audio",
@@ -12662,9 +14093,7 @@ window.PLAN_DATA = [
           "url": "https://youtube.com/coffeebreaklanguages",
           "skill": "listening",
           "duration": "15 min"
-        }
-      ],
-      "sunday": [
+        },
         {
           "time": "9:00 AM",
           "routine": "Review",
@@ -12685,6 +14114,15 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 Radio-Canada article. Identify 3 complex sentence structures used.",
+          "resource": "Radio-Canada",
+          "url": "https://ici.radio-canada.ca/",
+          "skill": "reading",
+          "duration": "15 min"
+        },
+        {
           "time": "11:00 AM",
           "routine": "Weak skill drill",
           "activity": "Spend 30 min on your WEAKEST skill from the exam simulation.",
@@ -12703,15 +14141,6 @@ window.PLAN_DATA = [
           "duration": "—"
         },
         {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 Radio-Canada article. Identify 3 complex sentence structures used.",
-          "resource": "Radio-Canada",
-          "url": "https://ici.radio-canada.ca/",
-          "skill": "reading",
-          "duration": "15 min"
-        },
-        {
           "time": "7:00 PM",
           "routine": "Speaking practice",
           "activity": "Record a 2-minute monologue about your week. Listen back, note errors. Re-record once.",
@@ -12728,15 +14157,6 @@ window.PLAN_DATA = [
           "url": "https://bonpatron.com/en/",
           "skill": "writing",
           "duration": "10 min"
-        },
-        {
-          "time": "7:00 AM",
-          "routine": "Morning audio",
-          "activity": "Listen to Coffee Break French while getting ready.",
-          "resource": "CBF",
-          "url": "https://youtube.com/coffeebreaklanguages",
-          "skill": "listening",
-          "duration": "15 min"
         }
       ]
     },
@@ -12846,7 +14266,75 @@ window.PLAN_DATA = [
         "url": "https://www.radiofrance.fr/franceinter/podcasts",
         "desc": "Native-speed radio — exam listening."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute: TEF listening drills",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "tef_practice",
+          "label": "TEF section practice (lunch)",
+          "icon": "📝"
+        },
+        {
+          "id": "writing",
+          "label": "Timed writing exercise",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "TEF reading comprehension",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Speaking: TEF oral task",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French news podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "mock_exam",
+          "label": "TEF practice exam section",
+          "icon": "📋"
+        },
+        {
+          "id": "tutor",
+          "label": "italki TEF mock session",
+          "icon": "👨‍🏫"
+        },
+        {
+          "id": "weakness",
+          "label": "Weakness drill (lowest-scoring skill)",
+          "icon": "🎯"
+        },
+        {
+          "id": "review",
+          "label": "Weekly progress review",
+          "icon": "📊"
+        }
+      ],
+      "streakGoal": "Exam mode: every single day counts. Track completion rate — target 90%+."
+    }
   },
   {
     "week": 20,
@@ -13318,6 +14806,15 @@ window.PLAN_DATA = [
       ],
       "saturday": [
         {
+          "time": "7:00 AM",
+          "routine": "Morning audio",
+          "activity": "Listen to Coffee Break French while getting ready.",
+          "resource": "CBF",
+          "url": "https://youtube.com/coffeebreaklanguages",
+          "skill": "listening",
+          "duration": "15 min"
+        },
+        {
           "time": "9:00 AM",
           "routine": "FULL EXAM SIMULATION",
           "activity": "FULL TEF PRACTICE EXAM #2 — All 4 sections. Time everything exactly.",
@@ -13326,6 +14823,24 @@ window.PLAN_DATA = [
           "skill": "all",
           "duration": "3.5 hrs",
           "habitTip": "Environment design: Set a French podcast as your alarm. Wake up in French."
+        },
+        {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
+          "resource": "TV5Monde B2",
+          "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
+          "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "TEF speaking mock",
+          "activity": "italki: 60-min session with TEF-experienced tutor. Simulate Section B (oral expression): describe image, argue a position, debate. Get scored on TEF criteria.",
+          "resource": "italki (TEF prep tutor)",
+          "url": "https://www.italki.com/en/teachers/french?teacher_type=professional&speciality=test_preparation",
+          "skill": "speaking",
+          "duration": "60 min"
         },
         {
           "time": "12:00 PM",
@@ -13355,15 +14870,6 @@ window.PLAN_DATA = [
           "duration": "30 min"
         },
         {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
-          "resource": "TV5Monde B2",
-          "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
-          "skill": "reading",
-          "duration": "15 min"
-        },
-        {
           "time": "8:30 PM",
           "routine": "Evening – Writing",
           "activity": "Write 5 sentences about what you did today. Check on BonPatron.",
@@ -13371,7 +14877,9 @@ window.PLAN_DATA = [
           "url": "https://bonpatron.com/en/",
           "skill": "writing",
           "duration": "10 min"
-        },
+        }
+      ],
+      "sunday": [
         {
           "time": "7:00 AM",
           "routine": "Morning audio",
@@ -13380,9 +14888,7 @@ window.PLAN_DATA = [
           "url": "https://youtube.com/coffeebreaklanguages",
           "skill": "listening",
           "duration": "15 min"
-        }
-      ],
-      "sunday": [
+        },
         {
           "time": "9:00 AM",
           "routine": "Review",
@@ -13403,6 +14909,15 @@ window.PLAN_DATA = [
           "duration": "20 min"
         },
         {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
+          "resource": "TV5Monde B2",
+          "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
+          "skill": "reading",
+          "duration": "15 min"
+        },
+        {
           "time": "11:00 AM",
           "routine": "Weak skill drill",
           "activity": "Spend 30 min on your WEAKEST skill from the exam simulation.",
@@ -13421,15 +14936,6 @@ window.PLAN_DATA = [
           "duration": "—"
         },
         {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
-          "resource": "TV5Monde B2",
-          "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
-          "skill": "reading",
-          "duration": "15 min"
-        },
-        {
           "time": "7:00 PM",
           "routine": "Speaking practice",
           "activity": "Record a 2-minute monologue about your week. Listen back, note errors. Re-record once.",
@@ -13446,15 +14952,6 @@ window.PLAN_DATA = [
           "url": "https://bonpatron.com/en/",
           "skill": "writing",
           "duration": "10 min"
-        },
-        {
-          "time": "7:00 AM",
-          "routine": "Morning audio",
-          "activity": "Listen to Coffee Break French while getting ready.",
-          "resource": "CBF",
-          "url": "https://youtube.com/coffeebreaklanguages",
-          "skill": "listening",
-          "duration": "15 min"
         }
       ]
     },
@@ -13564,7 +15061,75 @@ window.PLAN_DATA = [
         "url": "https://www.radiofrance.fr/franceinter/podcasts",
         "desc": "Native-speed radio — exam listening."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute: TEF listening drills",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "tef_practice",
+          "label": "TEF section practice (lunch)",
+          "icon": "📝"
+        },
+        {
+          "id": "writing",
+          "label": "Timed writing exercise",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "TEF reading comprehension",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Speaking: TEF oral task",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French news podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "mock_exam",
+          "label": "TEF practice exam section",
+          "icon": "📋"
+        },
+        {
+          "id": "tutor",
+          "label": "italki TEF mock session",
+          "icon": "👨‍🏫"
+        },
+        {
+          "id": "weakness",
+          "label": "Weakness drill (lowest-scoring skill)",
+          "icon": "🎯"
+        },
+        {
+          "id": "review",
+          "label": "Weekly progress review",
+          "icon": "📊"
+        }
+      ],
+      "streakGoal": "Exam mode: every single day counts. Track completion rate — target 90%+."
+    }
   },
   {
     "week": 21,
@@ -14052,6 +15617,15 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "TEF speaking mock",
+          "activity": "italki: 60-min TEF oral mock. Full simulation under timed conditions. Target: NCLC 7 score on all oral tasks.",
+          "resource": "italki (TEF prep tutor)",
+          "url": "https://www.italki.com/en/teachers/french?teacher_type=professional&speciality=test_preparation",
+          "skill": "speaking",
+          "duration": "60 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: conversation for fun, not practice.",
@@ -14091,21 +15665,21 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
-          "time": "11:00 AM",
-          "routine": "Writing review",
-          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
-          "resource": "BonPatron",
-          "url": "https://bonpatron.com/en/",
-          "skill": "writing",
-          "duration": "15 min"
-        },
-        {
           "time": "10:30 AM",
           "routine": "Morning study",
           "activity": "Read 1 Le Monde article. Write a 3-sentence opinion in French.",
           "resource": "Le Monde",
           "url": "https://www.lemonde.fr/",
           "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "Writing review",
+          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
+          "resource": "BonPatron",
+          "url": "https://bonpatron.com/en/",
+          "skill": "writing",
           "duration": "15 min"
         },
         {
@@ -14225,7 +15799,75 @@ window.PLAN_DATA = [
         "url": "https://apps.ankiweb.net/",
         "desc": "Daily review — never stop."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute: TEF listening drills",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "tef_practice",
+          "label": "TEF section practice (lunch)",
+          "icon": "📝"
+        },
+        {
+          "id": "writing",
+          "label": "Timed writing exercise",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "TEF reading comprehension",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Speaking: TEF oral task",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French news podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "mock_exam",
+          "label": "TEF practice exam section",
+          "icon": "📋"
+        },
+        {
+          "id": "tutor",
+          "label": "italki TEF mock session",
+          "icon": "👨‍🏫"
+        },
+        {
+          "id": "weakness",
+          "label": "Weakness drill (lowest-scoring skill)",
+          "icon": "🎯"
+        },
+        {
+          "id": "review",
+          "label": "Weekly progress review",
+          "icon": "📊"
+        }
+      ],
+      "streakGoal": "Exam mode: every single day counts. Track completion rate — target 90%+."
+    }
   },
   {
     "week": 22,
@@ -14713,6 +16355,15 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "TEF speaking mock",
+          "activity": "italki: 60-min TEF oral mock. Full simulation under timed conditions. Target: NCLC 7 score on all oral tasks.",
+          "resource": "italki (TEF prep tutor)",
+          "url": "https://www.italki.com/en/teachers/french?teacher_type=professional&speciality=test_preparation",
+          "skill": "speaking",
+          "duration": "60 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: conversation for fun, not practice.",
@@ -14752,21 +16403,21 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
-          "time": "11:00 AM",
-          "routine": "Writing review",
-          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
-          "resource": "BonPatron",
-          "url": "https://bonpatron.com/en/",
-          "skill": "writing",
-          "duration": "15 min"
-        },
-        {
           "time": "10:30 AM",
           "routine": "Morning study",
           "activity": "Read 1 Radio-Canada article. Identify 3 complex sentence structures used.",
           "resource": "Radio-Canada",
           "url": "https://ici.radio-canada.ca/",
           "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "Writing review",
+          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
+          "resource": "BonPatron",
+          "url": "https://bonpatron.com/en/",
+          "skill": "writing",
           "duration": "15 min"
         },
         {
@@ -14886,7 +16537,75 @@ window.PLAN_DATA = [
         "url": "https://apps.ankiweb.net/",
         "desc": "Daily review — never stop."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute: TEF listening drills",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "tef_practice",
+          "label": "TEF section practice (lunch)",
+          "icon": "📝"
+        },
+        {
+          "id": "writing",
+          "label": "Timed writing exercise",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "TEF reading comprehension",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Speaking: TEF oral task",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French news podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "mock_exam",
+          "label": "TEF practice exam section",
+          "icon": "📋"
+        },
+        {
+          "id": "tutor",
+          "label": "italki TEF mock session",
+          "icon": "👨‍🏫"
+        },
+        {
+          "id": "weakness",
+          "label": "Weakness drill (lowest-scoring skill)",
+          "icon": "🎯"
+        },
+        {
+          "id": "review",
+          "label": "Weekly progress review",
+          "icon": "📊"
+        }
+      ],
+      "streakGoal": "Exam mode: every single day counts. Track completion rate — target 90%+."
+    }
   },
   {
     "week": 23,
@@ -15337,14 +17056,41 @@ window.PLAN_DATA = [
       ],
       "saturday": [
         {
+          "time": "7:00 AM",
+          "routine": "Morning audio",
+          "activity": "Listen to Coffee Break French while getting ready.",
+          "resource": "CBF",
+          "url": "https://youtube.com/coffeebreaklanguages",
+          "skill": "listening",
+          "duration": "15 min"
+        },
+        {
           "time": "9:00 AM",
           "routine": "FULL EXAM #1",
-          "activity": "FULL TEF/TCF PRACTICE EXAM. All 4 sections. Strict timing.",
+          "activity": "FULL TEF Canada PRACTICE EXAM. All 4 sections. Strict timing.",
           "resource": "TEF Practice",
           "url": "https://frenchtestsimulator.com/",
           "skill": "all",
           "duration": "3.5 hrs",
           "habitTip": "Temptation bundle: Morning coffee you love + French video you need = great start."
+        },
+        {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
+          "resource": "TV5Monde B2",
+          "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
+          "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "TEF speaking mock",
+          "activity": "italki: 60-min TEF oral mock. Full simulation under timed conditions. Target: NCLC 7 score on all oral tasks.",
+          "resource": "italki (TEF prep tutor)",
+          "url": "https://www.italki.com/en/teachers/french?teacher_type=professional&speciality=test_preparation",
+          "skill": "speaking",
+          "duration": "60 min"
         },
         {
           "time": "1:00 PM",
@@ -15374,15 +17120,6 @@ window.PLAN_DATA = [
           "duration": "30 min"
         },
         {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
-          "resource": "TV5Monde B2",
-          "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
-          "skill": "reading",
-          "duration": "15 min"
-        },
-        {
           "time": "4:00 PM",
           "routine": "Speaking practice",
           "activity": "Record a 2-minute monologue about your week. Listen back, note errors. Re-record once.",
@@ -15399,7 +17136,9 @@ window.PLAN_DATA = [
           "url": "https://bonpatron.com/en/",
           "skill": "writing",
           "duration": "10 min"
-        },
+        }
+      ],
+      "sunday": [
         {
           "time": "7:00 AM",
           "routine": "Morning audio",
@@ -15408,18 +17147,25 @@ window.PLAN_DATA = [
           "url": "https://youtube.com/coffeebreaklanguages",
           "skill": "listening",
           "duration": "15 min"
-        }
-      ],
-      "sunday": [
+        },
         {
           "time": "9:00 AM",
           "routine": "FULL EXAM #2",
-          "activity": "SECOND FULL TEF/TCF PRACTICE EXAM. Different questions.",
+          "activity": "SECOND FULL TEF Canada PRACTICE EXAM. Different questions.",
           "resource": "TEF Practice",
           "url": "https://apprendre.tv5monde.com/en/exercises/tcf",
           "skill": "all",
           "duration": "3.5 hrs",
           "habitTip": "Identity: 'I am becoming fluent in French. Each morning session proves it.'"
+        },
+        {
+          "time": "10:30 AM",
+          "routine": "Morning study",
+          "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
+          "resource": "TV5Monde B2",
+          "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
+          "skill": "reading",
+          "duration": "15 min"
         },
         {
           "time": "1:00 PM",
@@ -15449,15 +17195,6 @@ window.PLAN_DATA = [
           "duration": "—"
         },
         {
-          "time": "10:30 AM",
-          "routine": "Morning study",
-          "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
-          "resource": "TV5Monde B2",
-          "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
-          "skill": "reading",
-          "duration": "15 min"
-        },
-        {
           "time": "7:00 PM",
           "routine": "Speaking practice",
           "activity": "Record a 2-minute monologue about your week. Listen back, note errors. Re-record once.",
@@ -15474,15 +17211,6 @@ window.PLAN_DATA = [
           "url": "https://bonpatron.com/en/",
           "skill": "writing",
           "duration": "10 min"
-        },
-        {
-          "time": "7:00 AM",
-          "routine": "Morning audio",
-          "activity": "Listen to Coffee Break French while getting ready.",
-          "resource": "CBF",
-          "url": "https://youtube.com/coffeebreaklanguages",
-          "skill": "listening",
-          "duration": "15 min"
         }
       ]
     },
@@ -15592,7 +17320,75 @@ window.PLAN_DATA = [
         "url": "https://apps.ankiweb.net/",
         "desc": "Daily review — never stop."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute: TEF listening drills",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "tef_practice",
+          "label": "TEF section practice (lunch)",
+          "icon": "📝"
+        },
+        {
+          "id": "writing",
+          "label": "Timed writing exercise",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "TEF reading comprehension",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Speaking: TEF oral task",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French news podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "mock_exam",
+          "label": "TEF practice exam section",
+          "icon": "📋"
+        },
+        {
+          "id": "tutor",
+          "label": "italki TEF mock session",
+          "icon": "👨‍🏫"
+        },
+        {
+          "id": "weakness",
+          "label": "Weakness drill (lowest-scoring skill)",
+          "icon": "🎯"
+        },
+        {
+          "id": "review",
+          "label": "Weekly progress review",
+          "icon": "📊"
+        }
+      ],
+      "streakGoal": "Exam mode: every single day counts. Track completion rate — target 90%+."
+    }
   },
   {
     "week": 24,
@@ -15877,7 +17673,7 @@ window.PLAN_DATA = [
         },
         {
           "time": "9:00 AM",
-          "routine": "TEF/TCF EXAM",
+          "routine": "TEF Canada EXAM",
           "activity": "EXAM. Listening → Reading → Writing → Speaking. You've put in 6 months. Trust the preparation. Breathe between sections.",
           "resource": "TEF Canada",
           "url": "https://www.lefrancaisdesaffaires.fr/en/candidate/test-evaluation-francais/tef-canada/registration/",
@@ -16053,6 +17849,15 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "TEF speaking mock",
+          "activity": "italki: 60-min TEF oral mock. Full simulation under timed conditions. Target: NCLC 7 score on all oral tasks.",
+          "resource": "italki (TEF prep tutor)",
+          "url": "https://www.italki.com/en/teachers/french?teacher_type=professional&speciality=test_preparation",
+          "skill": "speaking",
+          "duration": "60 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: conversation for fun, not practice.",
@@ -16092,21 +17897,21 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
-          "time": "11:00 AM",
-          "routine": "Writing review",
-          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
-          "resource": "BonPatron",
-          "url": "https://bonpatron.com/en/",
-          "skill": "writing",
-          "duration": "15 min"
-        },
-        {
           "time": "10:30 AM",
           "routine": "Morning study",
           "activity": "Read 1 Le Monde article. Write a 3-sentence opinion in French.",
           "resource": "Le Monde",
           "url": "https://www.lemonde.fr/",
           "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "Writing review",
+          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
+          "resource": "BonPatron",
+          "url": "https://bonpatron.com/en/",
+          "skill": "writing",
           "duration": "15 min"
         },
         {
@@ -16226,7 +18031,75 @@ window.PLAN_DATA = [
         "url": "https://apps.ankiweb.net/",
         "desc": "Daily review — never stop."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute: TEF listening drills",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "tef_practice",
+          "label": "TEF section practice (lunch)",
+          "icon": "📝"
+        },
+        {
+          "id": "writing",
+          "label": "Timed writing exercise",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "TEF reading comprehension",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Speaking: TEF oral task",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French news podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "mock_exam",
+          "label": "TEF practice exam section",
+          "icon": "📋"
+        },
+        {
+          "id": "tutor",
+          "label": "italki TEF mock session",
+          "icon": "👨‍🏫"
+        },
+        {
+          "id": "weakness",
+          "label": "Weakness drill (lowest-scoring skill)",
+          "icon": "🎯"
+        },
+        {
+          "id": "review",
+          "label": "Weekly progress review",
+          "icon": "📊"
+        }
+      ],
+      "streakGoal": "Exam mode: every single day counts. Track completion rate — target 90%+."
+    }
   },
   {
     "week": 25,
@@ -16714,6 +18587,15 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "TEF speaking mock",
+          "activity": "italki: 60-min TEF oral mock. Full simulation under timed conditions. Target: NCLC 7 score on all oral tasks.",
+          "resource": "italki (TEF prep tutor)",
+          "url": "https://www.italki.com/en/teachers/french?teacher_type=professional&speciality=test_preparation",
+          "skill": "speaking",
+          "duration": "60 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "HelloTalk: conversation for fun, not practice.",
@@ -16753,21 +18635,21 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
-          "time": "11:00 AM",
-          "routine": "Writing review",
-          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
-          "resource": "BonPatron",
-          "url": "https://bonpatron.com/en/",
-          "skill": "writing",
-          "duration": "15 min"
-        },
-        {
           "time": "10:30 AM",
           "routine": "Morning study",
           "activity": "Read 1 Radio-Canada article. Identify 3 complex sentence structures used.",
           "resource": "Radio-Canada",
           "url": "https://ici.radio-canada.ca/",
           "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "Writing review",
+          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
+          "resource": "BonPatron",
+          "url": "https://bonpatron.com/en/",
+          "skill": "writing",
           "duration": "15 min"
         },
         {
@@ -16887,7 +18769,75 @@ window.PLAN_DATA = [
         "url": "https://apps.ankiweb.net/",
         "desc": "Daily review — never stop."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute: TEF listening drills",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "tef_practice",
+          "label": "TEF section practice (lunch)",
+          "icon": "📝"
+        },
+        {
+          "id": "writing",
+          "label": "Timed writing exercise",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "TEF reading comprehension",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Speaking: TEF oral task",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French news podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "mock_exam",
+          "label": "TEF practice exam section",
+          "icon": "📋"
+        },
+        {
+          "id": "tutor",
+          "label": "italki TEF mock session",
+          "icon": "👨‍🏫"
+        },
+        {
+          "id": "weakness",
+          "label": "Weakness drill (lowest-scoring skill)",
+          "icon": "🎯"
+        },
+        {
+          "id": "review",
+          "label": "Weekly progress review",
+          "icon": "📊"
+        }
+      ],
+      "streakGoal": "Exam mode: every single day counts. Track completion rate — target 90%+."
+    }
   },
   {
     "week": 26,
@@ -17375,6 +19325,15 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
+          "time": "11:00 AM",
+          "routine": "TEF speaking mock",
+          "activity": "italki: 60-min TEF oral mock. Full simulation under timed conditions. Target: NCLC 7 score on all oral tasks.",
+          "resource": "italki (TEF prep tutor)",
+          "url": "https://www.italki.com/en/teachers/french?teacher_type=professional&speciality=test_preparation",
+          "skill": "speaking",
+          "duration": "60 min"
+        },
+        {
           "time": "2:00 PM",
           "routine": "Speaking",
           "activity": "Call a French friend. Celebrate in French!",
@@ -17414,21 +19373,21 @@ window.PLAN_DATA = [
           "duration": "15 min"
         },
         {
-          "time": "11:00 AM",
-          "routine": "Writing review",
-          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
-          "resource": "BonPatron",
-          "url": "https://bonpatron.com/en/",
-          "skill": "writing",
-          "duration": "15 min"
-        },
-        {
           "time": "10:30 AM",
           "routine": "Morning study",
           "activity": "Read 1 TV5Monde B2 text. Do comprehension exercises.",
           "resource": "TV5Monde B2",
           "url": "https://apprendre.tv5monde.com/en/exercises/b2-upper-intermediate",
           "skill": "reading",
+          "duration": "15 min"
+        },
+        {
+          "time": "11:00 AM",
+          "routine": "Writing review",
+          "activity": "Re-read all writing from this week. Fix errors. Note patterns.",
+          "resource": "BonPatron",
+          "url": "https://bonpatron.com/en/",
+          "skill": "writing",
           "duration": "15 min"
         },
         {
@@ -17548,6 +19507,74 @@ window.PLAN_DATA = [
         "url": "https://apps.ankiweb.net/",
         "desc": "Daily review — never stop."
       }
-    ]
+    ],
+    "exam": "TEF Canada",
+    "habitChecklist": {
+      "weekday": [
+        {
+          "id": "commute_audio",
+          "label": "Commute: TEF listening drills",
+          "icon": "🎧"
+        },
+        {
+          "id": "anki",
+          "label": "Anki review (non-negotiable)",
+          "icon": "📇"
+        },
+        {
+          "id": "tef_practice",
+          "label": "TEF section practice (lunch)",
+          "icon": "📝"
+        },
+        {
+          "id": "writing",
+          "label": "Timed writing exercise",
+          "icon": "✍️"
+        },
+        {
+          "id": "reading",
+          "label": "TEF reading comprehension",
+          "icon": "📰"
+        },
+        {
+          "id": "speaking",
+          "label": "Speaking: TEF oral task",
+          "icon": "🎤"
+        },
+        {
+          "id": "dogwalk",
+          "label": "Dog walk + French news podcast",
+          "icon": "🐕"
+        }
+      ],
+      "weekend": [
+        {
+          "id": "anki_wknd",
+          "label": "Anki review",
+          "icon": "📇"
+        },
+        {
+          "id": "mock_exam",
+          "label": "TEF practice exam section",
+          "icon": "📋"
+        },
+        {
+          "id": "tutor",
+          "label": "italki TEF mock session",
+          "icon": "👨‍🏫"
+        },
+        {
+          "id": "weakness",
+          "label": "Weakness drill (lowest-scoring skill)",
+          "icon": "🎯"
+        },
+        {
+          "id": "review",
+          "label": "Weekly progress review",
+          "icon": "📊"
+        }
+      ],
+      "streakGoal": "Exam mode: every single day counts. Track completion rate — target 90%+."
+    }
   }
 ];
