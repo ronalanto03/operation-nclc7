@@ -17673,7 +17673,7 @@ window.PLAN_DATA = [
         },
         {
           "time": "9:00 AM",
-          "routine": "TEF/TCF EXAM",
+          "routine": "TEF Canada EXAM",
           "activity": "EXAM. Listening → Reading → Writing → Speaking. You've put in 6 months. Trust the preparation. Breathe between sections.",
           "resource": "TEF Canada",
           "url": "https://www.lefrancaisdesaffaires.fr/en/candidate/test-evaluation-francais/tef-canada/registration/",
